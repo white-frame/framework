@@ -1,0 +1,10 @@
+{
+    "name": "white-frame/white-frame",
+    "require": {
+        "php": ">=5.5.9",
+        "white-frame/statistics": "dev-master",
+        "white-frame/helloquent": "dev-master",
+        "white-frame/http": "dev-master",
+        "white-frame/dynatable": "dev-master"
+    }
+}
