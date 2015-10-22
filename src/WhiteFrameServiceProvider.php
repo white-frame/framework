@@ -1,6 +1,7 @@
 <?php namespace WhiteFrame\WhiteFrame;
 
 use Illuminate\Support\ServiceProvider;
+use Pingpong\Widget\WidgetServiceProvider;
 use WhiteFrame\Dynatable\DynatableServiceProvider;
 use WhiteFrame\Helloquent\HelloquentServiceProvider;
 use WhiteFrame\Http\HttpServiceProvider;
@@ -24,12 +25,12 @@ class WhiteFrameServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /*
+        $this->app->register(WidgetServiceProvider::class);
+
         $this->app->register(HelloquentServiceProvider::class);
         $this->app->register(HttpServiceProvider::class);
         $this->app->register(StatisticsServiceProvider::class);
         $this->app->register(DynatableServiceProvider::class);
-        */
     }
 
     /**
