@@ -1,10 +1,17 @@
 {
-    "name": "white-frame/white-frame",
-    "require": {
-        "php": ">=5.5.9",
-        "white-frame/statistics": "dev-master",
-        "white-frame/helloquent": "dev-master",
-        "white-frame/http": "dev-master",
-        "white-frame/dynatable": "dev-master"
+  "name": "white-frame/white-frame",
+  "description": "Main repository for white frame implementation",
+  "autoload": {
+    "psr-4": {
+      "WhiteFrame\\WhiteFrame\\": "src/"
     }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.1.*",
+    "white-frame/statistics": "dev-master",
+    "white-frame/helloquent": "dev-master",
+    "white-frame/http": "dev-master",
+    "white-frame/dynatable": "dev-master"
+  }
 }
