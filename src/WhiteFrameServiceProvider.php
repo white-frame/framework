@@ -25,6 +25,7 @@ class WhiteFrameServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Register 3rd party providers
         $this->app->register(WidgetServiceProvider::class);
 
         $this->app->register(HelloquentServiceProvider::class);
