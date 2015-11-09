@@ -35,6 +35,20 @@ class WhiteFrameServiceProvider extends ServiceProvider
     }
 
     /**
+     *
+     */
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__.'/../config/whiteframe.php' => config_path('whiteframe.php'),
+        ], 'config');
+
+        $this->publishes([
+            __DIR__.'/../resources/assets' => public_path('white-frame/white-frame'),
+        ], 'public');
+    }
+
+    /**
      * Get the services provided by the provider.
      *
      * @return array
