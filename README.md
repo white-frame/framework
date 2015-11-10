@@ -37,9 +37,32 @@ Next, create a bower configuration file `.bowerrc` with the content :
 }
 ```
 
-Then, add required packages :
+Install required packages :
 
     bower install bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm --save
+
+Add packages to your template :
+
+Styles :
+```html
+<!-- basic requirements for white frame : bootstrap, font awesome, dynatable -->
+<link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('bower_components/components-font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+<link href="{{ asset('bower_components/dynatable/jquery.dynatable.css') }}" rel="stylesheet">
+```
+
+Scripts :
+```html
+<!-- basic requirements for white frame : jquery, jquery ui, and js from bootstrap -->
+<script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
+<script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+<!-- white frame components : dynatable, popconfirm, restfulizer -->
+<script src="{{ asset('bower_components/dynatable/jquery.dynatable.js') }}"></script>
+<script src="{{ asset('bower_components/popconfirm/jquery.popconfirm.js') }}"></script>
+<script src="{{ asset('bower_components/restfulizer/jquery.restfulizer.js') }}"></script>
+```
 
 ## Boilerplate
 
