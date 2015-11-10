@@ -27,7 +27,19 @@ First, require the main project package for installing dependancies.
 
 #### Requiring bower requirements
 
-... work
+First of all you should (install bower)[http://bower.io/#install-bower]
+
+Next, create a bower configuration file `.bowerrc` with the content :
+
+```json
+{
+	"directory": "public/bower_components"
+}
+```
+
+Then, add required packages :
+
+    bower install bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm --save
 
 ## Boilerplate
 
