@@ -25,6 +25,10 @@ First, require the main project package for installing dependancies.
     "prefer-stable": true,
     "minimum-stability": "dev"
 
+When installed you can add the White Frame service provider to your `config/app.php` :
+
+    \WhiteFrame\WhiteFrame\WhiteFrameServiceProvider::class,
+
 #### Requiring bower requirements
 
 First of all you should (install bower)[http://bower.io/#install-bower]
