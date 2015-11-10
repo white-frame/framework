@@ -14,7 +14,7 @@ As it brings some front end logic, WhiteFrame require some bower packages in add
 
 ## Laravel 5.x
 
-### Installing laravel package
+#### Installing laravel package
 
 First, require the main project package for installing dependancies.
 
@@ -25,7 +25,7 @@ First, require the main project package for installing dependancies.
     "prefer-stable": true,
     "minimum-stability": "dev"
 
-### Requiring bower requirements
+#### Requiring bower requirements
 
 ... work
 
