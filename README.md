@@ -41,7 +41,7 @@ Install required packages :
 
     bower install bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm --save
 
-Add packages to your template :
+Add packages to your template using your prefered method. In our example we include directly assets.
 
 Styles :
 ```html
