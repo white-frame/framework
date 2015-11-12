@@ -56,13 +56,13 @@ Install required packages :
 Add packages to your template using your prefered method, you can use following predefined views :
 
 Styles :
-```html
-	@include("white-frame::assets.css")
+```blade
+@include("white-frame::assets.css")
 ```
 
 Scripts :
-```html
-	@include("white-frame::assets.js")
+```blade
+@include("white-frame::assets.js")
 ```
 
 **Tip** : You can remove some assets on theses views if published (with `vendor:publish`), just check the folder `resources/views/vendor/white-frame/assets`
