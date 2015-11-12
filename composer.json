@@ -9,7 +9,6 @@
   "require": {
     "php": ">=5.5.9",
     "illuminate/support": "5.1.*",
-    "laracasts/presenter": "0.2.*",
     "pingpong/widget" : "~2.0",
     "white-frame/statistics": "dev-master",
     "white-frame/helloquent": "dev-master",
