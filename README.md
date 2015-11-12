@@ -14,7 +14,7 @@ As it brings some front end logic, WhiteFrame require some bower packages in add
 
 ## Laravel 5.x
 
-#### Installing laravel package
+### Installing laravel package
 
 First, require the main project package for installing dependancies.
 
@@ -29,7 +29,15 @@ When installed you can add the White Frame service provider to your `config/app.
 
     \WhiteFrame\WhiteFrame\WhiteFrameServiceProvider::class,
 
-#### Requiring bower requirements
+Publish vendor using the artisan `vendor:publish` command :
+
+    php artisan vendor:publish --provider="WhiteFrame\WhiteFrame\WhiteFrameServiceProvider"
+
+### Requiring bower requirements
+
+If you are familiar with installing and including bower packages, white frame require following packages : `bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm`.
+
+#### Steps by step installation (from the beginning)
 
 First of all you should (install bower)[http://bower.io/#install-bower]
 
@@ -45,28 +53,19 @@ Install required packages :
 
     bower install bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm --save
 
-Add packages to your template using your prefered method. In our example we include directly assets.
+Add packages to your template using your prefered method, you can use following predefined views :
 
 Styles :
 ```html
-<!-- basic requirements for white frame : bootstrap, font awesome, dynatable -->
-<link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('bower_components/components-font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-<link href="{{ asset('bower_components/dynatable/jquery.dynatable.css') }}" rel="stylesheet">
+	@include("white-frame::assets.css")
 ```
 
 Scripts :
 ```html
-<!-- basic requirements for white frame : jquery, jquery ui, and js from bootstrap -->
-<script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
-<script src="{{ asset('bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
-<script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-<!-- white frame components : dynatable, popconfirm, restfulizer -->
-<script src="{{ asset('bower_components/dynatable/jquery.dynatable.js') }}"></script>
-<script src="{{ asset('bower_components/popconfirm/jquery.popconfirm.js') }}"></script>
-<script src="{{ asset('bower_components/restfulizer/jquery.restfulizer.js') }}"></script>
+	@include("white-frame::assets.js")
 ```
+
+**Tip** : You can remove some assets on theses views if published (with `vendor:publish`), just check the folder `resources/views/vendor/white-frame/assets`
 
 ## Boilerplate
 
