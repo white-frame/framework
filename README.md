@@ -35,7 +35,7 @@ Publish vendor using the artisan `vendor:publish` command :
 
 ### Requiring bower requirements
 
-If you are familiar with installing and including bower packages, white frame require following packages : `bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm`.
+If you are familiar with installing and including bower packages, white frame require following packages : `bootstrap components-font-awesome jquery jquery-ui dynatable restfulizer popconfirm`. If not, take a look at the Step by step below.
 
 #### Steps by step installation (from the beginning)
 
