@@ -46,6 +46,12 @@ class WhiteFrameServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../resources/assets' => public_path('white-frame/white-frame'),
         ], 'public');
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'white-frame');
+
+        $this->publishes([
+            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/white-frame')
+        ], 'view');
     }
 
     /**
