@@ -1,5 +1,7 @@
 <?php namespace WhiteFrame\WhiteFrame;
 
+use App;
+
 /**
  * Class WhiteFrame
  * @package WhiteFrame\WhiteFrame
