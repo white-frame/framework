@@ -12,6 +12,7 @@
     "pingpong/widget" : "~2.0",
     "white-frame/statistics": "dev-master",
     "white-frame/helloquent": "dev-master",
+    "white-frame/view": "dev-master",
     "white-frame/http": "dev-master",
     "white-frame/dynatable": "dev-master"
   }

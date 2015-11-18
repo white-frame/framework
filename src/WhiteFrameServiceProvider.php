@@ -6,6 +6,7 @@ use WhiteFrame\Dynatable\DynatableServiceProvider;
 use WhiteFrame\Helloquent\HelloquentServiceProvider;
 use WhiteFrame\Http\HttpServiceProvider;
 use WhiteFrame\Statistics\StatisticsServiceProvider;
+use WhiteFrame\View\ViewServiceProvider;
 
 /**
  * Class WhiteFrameServiceProvider
@@ -29,6 +30,7 @@ class WhiteFrameServiceProvider extends ServiceProvider
         $this->app->register(WidgetServiceProvider::class);
 
         $this->app->register(HelloquentServiceProvider::class);
+        $this->app->register(ViewServiceProvider::class);
         $this->app->register(HttpServiceProvider::class);
         $this->app->register(StatisticsServiceProvider::class);
         $this->app->register(DynatableServiceProvider::class);
