@@ -21,6 +21,6 @@
     "white-frame/helloquent": "0.*",
     "white-frame/view": "0.*",
     "white-frame/http": "0.*",
-    "white-frame/dynatable": "0.*"
+    "white-frame/dynatable": "2.*"
   }
 }
