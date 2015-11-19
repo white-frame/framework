@@ -1,6 +1,13 @@
 {
   "name": "white-frame/white-frame",
   "description": "Main repository for white frame implementation",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Anael Favre",
+      "email": "anael.favre@gmail.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "WhiteFrame\\WhiteFrame\\": "src/"
