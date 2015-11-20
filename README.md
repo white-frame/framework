@@ -18,12 +18,7 @@ As it brings some front end logic, WhiteFrame require some bower packages in add
 
 First, require the main project package for installing dependancies.
 
-    composer require white-frame/white-frame:dev-master
-
-**Development version warning** : As the package is a work in progress the `minimum-stability` of your project should be `dev`, otherwise the command before will throw an error. If you dont want to put all your deps to a dev version, you can setup `prefer-stable` option to `true`. Put theses lines into your composer.json :
-
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+    composer require white-frame/white-frame:0.*
 
 When installed you can add the White Frame service provider to your `config/app.php` :
 
