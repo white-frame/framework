@@ -26,6 +26,10 @@ class WhiteFrameServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton('white-frame.white-frame.helper.manager', function ($app) {
+            return new \WhiteFrame\WhiteFrame\Helper\Manager();
+        });
+
         // Register 3rd party providers
         $this->app->register(WidgetServiceProvider::class);
 
