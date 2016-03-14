@@ -1,5 +1,5 @@
 <?php
-die('prout');
+
 if (!function_exists('wf')) 
 {
     function wf() {
