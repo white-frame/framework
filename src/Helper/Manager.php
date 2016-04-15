@@ -1,4 +1,4 @@
-<?php namespace WhiteFrame\WhiteFrame\Helper;
+<?php namespace WhiteFrame\Framework\Helper;
 
 class Manager 
 {

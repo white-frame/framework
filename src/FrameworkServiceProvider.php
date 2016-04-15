@@ -10,7 +10,7 @@ use WhiteFrame\View\ViewServiceProvider;
 
 /**
  * Class WhiteFrameServiceProvider
- * @package WhiteFrame\WhiteFrame
+ * @package WhiteFrame\Framework
  */
 class WhiteFrameServiceProvider extends ServiceProvider
 {
@@ -26,8 +26,8 @@ class WhiteFrameServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('white-frame.white-frame.helper.manager', function ($app) {
-            return new \WhiteFrame\WhiteFrame\Helper\Manager();
+        $this->app->singleton('white-frame.framework.helper.manager', function ($app) {
+            return new \WhiteFrame\Framework\Helper\Manager();
         });
 
         // Register 3rd party providers
