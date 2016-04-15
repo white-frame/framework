@@ -42,11 +42,11 @@ class FrameworkServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/framework.php' => config_path('framework.php'),
+            __DIR__.'/../config/framework.php' => base_path('config/framework.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../resources/assets' => public_path('white-frame/framework'),
+            __DIR__.'/../resources/assets' => base_path('public/white-frame/framework'),
         ], 'public');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'white-frame');
