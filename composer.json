@@ -11,10 +11,7 @@
   "autoload": {
     "psr-4": {
       "WhiteFrame\\Framework\\": "src/"
-    },
-    "files": [
-      "src/Helper/helpers.php"
-    ]
+    }
   },
   "require": {
     "php": ">=5.5.9",
