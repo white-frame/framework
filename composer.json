@@ -15,13 +15,13 @@
   },
   "require": {
     "php": ">=5.5.9",
-    "illuminate/support": "5.1.*",
+    "illuminate/support": "5.1",
     "pingpong/widget" : "~2.0",
-    "white-frame/support": "5.1.*",
-    "white-frame/statistics": "5.1.*",
-    "white-frame/helloquent": "5.1.*",
-    "white-frame/view": "5.1.*",
-    "white-frame/http": "5.1.*",
-    "white-frame/dynatable": "5.1.*"
+    "white-frame/support": "~5.1",
+    "white-frame/statistics": "~5.1",
+    "white-frame/helloquent": "~5.1",
+    "white-frame/view": "~5.1",
+    "white-frame/http": "~5.1",
+    "white-frame/dynatable": "~5.1"
   }
 }
