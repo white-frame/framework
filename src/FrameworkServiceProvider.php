@@ -9,10 +9,10 @@ use WhiteFrame\Statistics\StatisticsServiceProvider;
 use WhiteFrame\View\ViewServiceProvider;
 
 /**
- * Class WhiteFrameServiceProvider
+ * Class FrameworkServiceProvider
  * @package WhiteFrame\Framework
  */
-class WhiteFrameServiceProvider extends ServiceProvider
+class FrameworkServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
