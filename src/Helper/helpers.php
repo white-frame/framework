@@ -3,8 +3,11 @@
 if (!function_exists('wf')) 
 {
     function wf() {
-        $manager = app('white-frame.white-frame.helper.manager');
-
-        return $manager;
+        try {
+            return app()->make('white-frame.white-frame.helper.manager');
+        }
+        catch(\ReflectionException $e) {
+            return null;
+        }
     }
 }
