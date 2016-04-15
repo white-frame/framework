@@ -1,4 +1,4 @@
-<?php namespace WhiteFrame\WhiteFrame;
+<?php namespace WhiteFrame\Framework;
 
 use Illuminate\Support\ServiceProvider;
 use Pingpong\Widget\WidgetServiceProvider;
@@ -46,11 +46,11 @@ class WhiteFrameServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/whiteframe.php' => config_path('whiteframe.php'),
+            __DIR__.'/../config/framework.php' => config_path('framework.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../resources/assets' => public_path('white-frame/white-frame'),
+            __DIR__.'/../resources/assets' => public_path('white-frame/framework'),
         ], 'public');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'white-frame');
