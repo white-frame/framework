@@ -6,12 +6,12 @@
 
 With composer, you should use the dev branch instead releases. So you will need to lower your composer `minimum-stability`. Simply add at the end of your `composer.json` :
 
-   {
-     // Default project stuff
-     
-     "minimum-stability": "dev",
-     "prefer-stable": true
-   }
+    {
+      // Default project stuff
+      
+      "minimum-stability": "dev",
+      "prefer-stable": true
+    }
 
 Next, check your laravel version and use the corresponding branch. Only `5.1 Laravel LTS` is supported for now.
 
