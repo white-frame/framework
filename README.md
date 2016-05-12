@@ -17,10 +17,10 @@ Next, check your laravel version and use the corresponding branch. Only `5.1 Lar
 
     composer require white-frame/framework:5.1.x-dev
 
-For laravel, add to your `config/app.php` :
+For *Laravel*, add to your `config/app.php` :
 
     \WhiteFrame\Framework\FrameworkServiceProvider::class,
 
-For lumen, edit your `bootstrap/app.php` :
+For *Lumen*, edit your `bootstrap/app.php` :
 
     $app->register(\WhiteFrame\Framework\FrameworkServiceProvider::class);
