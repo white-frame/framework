@@ -44,16 +44,6 @@ class FrameworkServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/framework.php' => base_path('config/framework.php'),
         ], 'config');
-
-        $this->publishes([
-            __DIR__.'/../resources/assets' => base_path('public/white-frame/framework'),
-        ], 'public');
-
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'white-frame');
-
-        $this->publishes([
-            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/white-frame')
-        ], 'view');
     }
 
     /**
