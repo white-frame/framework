@@ -6,6 +6,7 @@ use WhiteFrame\Dynatable\DynatableServiceProvider;
 use WhiteFrame\Helloquent\HelloquentServiceProvider;
 use WhiteFrame\Http\HttpServiceProvider;
 use WhiteFrame\Statistics\StatisticsServiceProvider;
+use WhiteFrame\Support\Framework;
 use WhiteFrame\View\ViewServiceProvider;
 
 /**
@@ -26,6 +27,8 @@ class FrameworkServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        Framework::registerPackage('framework');
+
         // Register 3rd party providers
         $this->app->register(WidgetServiceProvider::class);
 
