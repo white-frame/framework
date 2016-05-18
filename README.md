@@ -24,3 +24,7 @@ For **Laravel**, add to your `config/app.php` :
 For **Lumen**, edit your `bootstrap/app.php` :
 
     $app->register(\WhiteFrame\Framework\FrameworkServiceProvider::class);
+
+# Usage
+
+WhiteFrame have many packages. Take a look at the [boilerplate](https://github.com/white-frame/white-frame-boilerplate).
