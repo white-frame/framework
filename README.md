@@ -27,4 +27,4 @@ For **Lumen**, edit your `bootstrap/app.php` :
 
 # Usage
 
-WhiteFrame have many packages. Take a look at the [boilerplate](https://github.com/white-frame/white-frame-boilerplate).
+WhiteFrame have many packages. Take a look at the [boilerplate](https://github.com/white-frame/boilerplate).
