@@ -18,7 +18,7 @@
     "illuminate/support": "~5.1",
     "pingpong/widget" : "~2.0",
     "white-frame/support": "5.1.x-dev",
-    "white-frame/statistics": "5.1.x-dev",
+    "ifnot/statistics": "dev-master",
     "white-frame/helloquent": "5.1.x-dev",
     "white-frame/view": "5.1.x-dev",
     "white-frame/http": "5.1.x-dev",
